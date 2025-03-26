@@ -1,2 +1,2 @@
-# Li-o-Java
+# Licao-Java
 Lição da faculdade de Java
