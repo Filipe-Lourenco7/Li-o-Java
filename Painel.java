@@ -2,6 +2,7 @@ package javaap;
 
 import javax.swing.JOptionPane;
 
+
 public class Painel extends javax.swing.JFrame {
     public Painel() {
         initComponents();
@@ -182,7 +183,14 @@ public class Painel extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 {                                         
-    System.exit(0);
+    int resposta = JOptionPane.showConfirmDialog(this,
+            "Tem certeza que deseja sair?",
+            "Confirmação de Saída",
+            JOptionPane.YES_NO_OPTION,
+            JOptionPane.QUESTION_MESSAGE);
+            if (resposta == JOptionPane.YES_OPTION){
+                System.exit(0);
+            }
 }
 
         // TODO add your handling code here:
